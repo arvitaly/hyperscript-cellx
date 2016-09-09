@@ -4,11 +4,15 @@ module.exports = function (cell) {
     if (cell instanceof cellx.Cell) {
         newCell = new cellx.Cell(function () { return cell.get() });
     } else {
-        newCell = new cellx.Cell(function () { return cell() });
+        newCell = new cellx.Cell(function () {
+            return cell()
+        });
     }
     return function (cb) {
         if (cb) {
-            newCell.subscribe(cb);
+            newCell.subscribe(function () {
+                cb(newCell.get());
+            });
             return newCell.dispose.bind(newCell);
         }
         return newCell.get();
