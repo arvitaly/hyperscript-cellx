@@ -1,0 +1,24 @@
+{
+  "name": "hyperscript-cellx",
+  "version": "0.0.2",
+  "description": "Cellx adapter for hyperscript observable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvitaly/hyperscript-cellx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvitaly/hyperscript-cellx/issues"
+  },
+  "homepage": "https://github.com/arvitaly/hyperscript-cellx#readme",
+  "devDependencies": {
+    "cellx": "^1.6.39"
+  },
+  "dependencies": {}
+}
