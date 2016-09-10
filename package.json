@@ -1,6 +1,6 @@
 {
   "name": "hyperscript-cellx",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Cellx adapter for hyperscript observable",
   "main": "index.js",
   "scripts": {

@@ -10,10 +10,14 @@ module.exports = function (cell) {
     }
     return function (cb) {
         if (cb) {
-            newCell.subscribe(function () {
-                cb(newCell.get());
-            });
-            return newCell.dispose.bind(newCell);
+            if (typeof (cb) === "function") {
+                newCell.subscribe(function () {
+                    cb(newCell.get());
+                });
+                return newCell.dispose.bind(newCell);
+            } else {
+                newCell.set(cb);
+            }
         }
         return newCell.get();
     }

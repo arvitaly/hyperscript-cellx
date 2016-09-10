@@ -28,4 +28,9 @@ describe("Observer", function () {
             })
         })
     })
+    it("set", function () {
+        var x = cellx(fixture1);
+        x(fixture2);
+        expect(x()).toBe(fixture2);
+    })
 })
