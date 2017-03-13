@@ -1,4 +1,6 @@
 # hyperscript-cellx
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/arvitaly/hyperscript-cellx.svg)](https://greenkeeper.io/)
 Cellx adapter for hyperscript observable
 
 # Example
